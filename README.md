@@ -1,11 +1,11 @@
-# BIOS 259: The Art of Reproducible Science: A Hands-on Approach
+## BIOS 259: The Art of Reproducible Science: A Hands-on Approach
 Welcome to BIOS 259! This is course material for (BIOS 259) The Art of Reproducible Science: A Hands-on Approach
 
-## Course description
+### Course description
 
 This mini-course is designed to equip graduate students and postdocs with essential skills for ensuring reproducibility in computational research. Through practical exercises and interactive sessions, participants will learn best practices, tools, and techniques for doing open and reproducible research. Topics covered include version control, containerization, data management, workflows, and documentation strategies. This course empowers students to overcome challenges associated with reproducibility, fostering rigorous scientific inquiry, and enhancing the credibility and impact of their computational work, while also exploring the primary causes and consequences of irreproducibility in research. Participants will gain valuable insights and practical experience in achieving computational reproducibility across various domains, including biology.
 
-## Learning goals
+### Learning goals
 
 - Understand the importance of computational reproducibility in research, while exploring the fundamental causes and consequences of irreproducibility
 - Learn best practices for organizing computational projects to ensure transparency and reproducibility
@@ -15,7 +15,7 @@ This mini-course is designed to equip graduate students and postdocs with essent
 - Learn techniques for automating workflows and generating reproducible results
 - Foster a culture of reproducibility, open science and collaboration in research
 
-## Topics covered
+### Topics covered
 
 **Version Control with Git:** Learn how to track changes, collaborate effectively, and maintain a robust version history of your code and documents.
 
@@ -31,5 +31,5 @@ Dive into Snakemake, a powerful workflow management system, and gain hands-on ex
 Learn best practices for organizing, sharing, and documenting code and data to facilitate reproducibility and enable others to build upon your work.
 
 
-## Course schedule and material
+### Course schedule and material
 
