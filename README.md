@@ -30,6 +30,9 @@ Dive into Snakemake, a powerful workflow management system, and gain hands-on ex
 **Code, data and project management and documentation:**
 Learn best practices for organizing, sharing, and documenting code and data to facilitate reproducibility and enable others to build upon your work.
 
+### Prerequisites
+- Basic understanding and familiarity with programming (e.g., Python, R)
+- Basic understanding of Unix/Linux Bash
 
 ### Course schedule and material
 
