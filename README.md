@@ -7,13 +7,14 @@ This mini-course is designed to equip graduate students and postdocs with essent
 
 ### Learning goals
 
-- Understand the importance of computational reproducibility in research, while exploring the fundamental causes and consequences of irreproducibility
-- Learn best practices for organizing computational projects to ensure transparency and reproducibility
-- Gain hands-on experience with version control systems, such as Git, for tracking changes and collaborating on code and data
-- Explore containerization tools, like Docker and Singularity, to create reproducible and portable computing environments
-- Develop strategies for managing and documenting data and code effectively to facilitate reproducibility
+This course aims to foster a culture of reproducibility, open science, open source and collaboration in research and provide the necessary tools and skills. Through active engagement and completion of course activities, you will be able to:
+- Understand the importance and causes of computational reproducibility in research.
+- Implement best practices for transparent and reproducible project organization.
+- Gain proficiency in version control systems (e.g., Git) for collaborative code and data tracking.
+- Utilize containerization tools (e.g., Docker, Singularity) for portable computing environments.
+- Develop effective strategies for managing and documenting data and code to ensure reproducibility.
 - Learn techniques for automating workflows and generating reproducible results
-- Foster a culture of reproducibility, open science and collaboration in research
+
 
 ### Topics covered
 
