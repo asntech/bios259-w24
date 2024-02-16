@@ -10,4 +10,4 @@ WORKDIR /opt
 COPY app.py /opt
 
 ## Run the application
-CMD ["python", "app.py", "--name", "Participant"]
+CMD ["python", "/opt/app.py", "--name", "Participant"]
