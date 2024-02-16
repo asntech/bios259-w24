@@ -59,6 +59,8 @@ This exercise will guide you through the process of modifying a Dockerfile and p
 
 9. You may want to commit and push it GitHub to brush-up your Git skills from day 2 :-)
 
+10. **Bonus task**: Create a `Singularity` image using the Docker image you just pushed to Docker Hun and try to run it as a Singularity container.
+
 ## Conclusion
 
 Congratulations! You have successfully modified a Dockerfile, built a Docker image with your changes, and pushed it to Docker Hub. This exercise demonstrates a basic workflow for Docker image modification and distribution.
