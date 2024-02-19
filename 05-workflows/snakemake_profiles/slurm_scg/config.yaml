@@ -1,0 +1,31 @@
+# helpful to give path e.g. if you write to scratch/not in current dir
+cluster:
+  mkdir -p <insert_path>/{rule} &&
+  sbatch
+    --partition={resources.partition}
+    --time={resources.time}
+    --job-name={rule}-{wildcards.sample}
+    --output=<insert_path>/{rule}/{wildcards.sample}-%j.out
+    --error=<insert_path>/{rule}/{wildcards.sample}-%j.err
+    --mem-per-cpu={resources.mem_mb}
+    --nodes={resources.nodes}
+    --cpus-per-task={resources.threads}
+default-resources:
+  - partition=interactive
+  - time="00:10:00"
+  - mem_mb=4000
+  - disk_mb=4000
+  - nodes=1
+latency-wait: 120
+# restart-times: 3
+jobs: 50
+keep-going: True
+rerun-incomplete: True
+printshellcmds: True
+scheduler: greedy
+use-conda: True
+# Singularity args (binds to oak)
+# use-singularity: True
+# singularity-args: "-B /oak:/oak"
+cluster-status: "./snakemake_profiles/slurm_scg/status-sacct.sh"
+max-status-checks-per-second: 10
