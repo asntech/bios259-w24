@@ -24,7 +24,7 @@ rule trim:
     input:
         "data/input.txt",
     output:
-        "data/trim/{sample}.txt"
+        "data/trim_{sample}.txt"
     shell:
         "head -n 100 {input} > {output}"
 
@@ -36,11 +36,11 @@ rule trim:
 # ---
 rule concat:
     input:
-        trim=expand("data/trim/{sample}.txt", sample=SAMPLES),
+        trim=expand("data/trim_{sample}.txt", sample=SAMPLES),
     output:
         "results/all.txt"
     shell:
-        "tail -n +2 {input.trim} >> {output}
+        "tail -q -n +2 {input.trim} >> {output}"
 
 
 rule plot_quals:
