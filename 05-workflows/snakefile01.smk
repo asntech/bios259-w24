@@ -45,7 +45,7 @@ rule concat:
     resources:
         time="00:30:00" # e.g. changing default resource
     shell:
-        "tail -n +2 {input.trim} >> {output}
+        "tail -n +2 {input.trim} >> {output}"
 
 # ---- Documentation --- #
 # https://snakemake.readthedocs.io/en/v7.32.3/
