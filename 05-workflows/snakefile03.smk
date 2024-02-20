@@ -45,17 +45,16 @@ rule concat:
 
 rule plot_quals:
     input:
-        "results/all.txt"
+        file="results/all.txt",
+	script="scripts/plot.py"
     output:
         "plots/dummy_plot.pdf"
-    script:
-        "scripts/plot.py"
     singularity:
         "docker://biocontainers/seaborn:0.12.2_cv1"
     resources:
         time="00:30:00"
     shell:
-        "python {script} --input {input} --output {output}"
+        "python {input.script} --input {input.file} --output {output}"
 
 # ---- Documentation --- #
 # https://snakemake.readthedocs.io/en/v7.32.3/snakefiles/deployment.html#running-jobs-in-containers

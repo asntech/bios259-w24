@@ -1,12 +1,12 @@
 # helpful to give path e.g. if you write to scratch/not in current dir
 cluster:
-  mkdir -p <insert_path>/{rule} &&
+  mkdir -p ./logs/{rule} &&
   sbatch
     --partition={resources.partition}
     --time={resources.time}
-    --job-name={rule}-{wildcards.sample}
-    --output=<insert_path>/{rule}/{wildcards.sample}-%j.out
-    --error=<insert_path>/{rule}/{wildcards.sample}-%j.err
+    --job-name={rule}
+    --output=./logs/{rule}/%j.out
+    --error=./logs/{rule}/%j.err
     --mem-per-cpu={resources.mem_mb}
     --nodes={resources.nodes}
     --cpus-per-task={resources.threads}
