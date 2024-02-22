@@ -26,10 +26,10 @@ ssh <SUNetID>@login.sherlock.stanford.edu
 
 Let's make a directory on the scratch space.
 
-``
+```
 mkdir -p /scratch/users/${USER}/bios259/sarek
 cd /scratch/users/${USER}/bios259/sarek
-``
+```
 
 ### Load the Java module as Nextflow needs Java
 
