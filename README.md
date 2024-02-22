@@ -39,11 +39,11 @@ Learn best practices for organizing, sharing, and documenting code and data to f
 
 | Date       | Day     | Topics covered                               | Time     | Location    | Material                |
 |------------|---------|-----------------------------------------------|----------|-------------|-------------------------|
-| 02.26.2024 | Monday  | Introduction to reproducibility and setting up | 10:00-13:00 | M218A | Slides, Setup instructions |
-| 02.28.2024 | Wednesday | Version Control (Git/GitHub)                   | 10:00-13:00 | M218A       | Slides, Git cheat sheet |
-| 03.01.2024 | Friday  | Environment management (Conda, Bioconda, Mamba) | 10:00-13:00 | M218A       |  |
-| 03.04.2024 | Monday  | Containerization (Docker, Singularity)          | 10:00-13:00 | M218A       |  |
-| 03.06.2024 | Wednesday | Workflows (Snakemake, Nextflow/nf-core)        | 10:00-13:00 | M218A       |  |
-| 03.08.2024 | Friday  | Documentation (FAIR data and open code) and wrap-up | 10:00-13:00 | LK208 |  |
+| 02.26.2024 | Mon  | Introduction to reproducibility and setting up | 10:00-13:00 | M218A | Slides, Setup instructions |
+| 02.28.2024 | Wed | Version Control (Git/GitHub)                   | 10:00-13:00 | M218A       | Slides, Git cheat sheet |
+| 03.01.2024 | Fri  | Environment management (Conda, Bioconda, Mamba) | 10:00-13:00 | M218A       |  |
+| 03.04.2024 | Mon  | Containerization (Docker, Singularity)          | 10:00-13:00 | M218A       |  |
+| 03.06.2024 | Wed | Workflows (Snakemake, Nextflow/nf-core)        | 10:00-13:00 | M218A       |  |
+| 03.08.2024 | Fri  | Documentation (FAIR data and open code) and wrap-up | 10:00-13:00 | LK208 |  |
 
 ### Resources and additional reading material
