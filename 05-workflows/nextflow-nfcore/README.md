@@ -80,7 +80,8 @@ sh_dev -c 4 -m 8GB -t 01:00:00 -J sarek_test
 
 ### Run the Sarek pipeline using a test dataset
 
-We will run the pipeline as a singularity on test data and call somatic mutations using Strelka2
+We will run the pipeline as a singularity on test data and call somatic mutations using Strelka2.
+This is a small test data which uses only part of one chromosome. You need to find what chromosome is that at the end. 
 
 ```
 nextflow run nf-core/sarek -profile test,singularity --outdir results -r 3.3.0 --tools strelka
@@ -96,11 +97,15 @@ ls
 You can also view and download the results using the OnDemand: https://ondemand.sherlock.stanford.edu/
 Read more about Sherlock OnDemand here - https://www.sherlock.stanford.edu/docs/user-guide/ondemand/
 
+Try to locate the MultiQC outputs
+
 ### Let's resume the pipeline and also run CNVKit
 
 Along the way, your PI wants to see the copy number alterations in the same sample.
 You can simple go the same directory and resume the pipeline by providing cnvkit to tools arguments.
 
-``
+```
 nextflow run nf-core/sarek -profile test,singularity --outdir results -r 3.3.0 --tools strelka,cnvkit -resume
 ```
+
+Now you can look for the CNAs. Can you find what chromosome number was used for this analysis.
