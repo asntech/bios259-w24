@@ -25,8 +25,8 @@ This course aims to foster a culture of reproducibility, open science, open sour
 **Containerization with Docker and Singularity:**
 Understand how to encapsulate your computational environment, ensuring consistent and reproducible execution across different systems.
 
-**Workflow management using Snakemake:**
-Dive into Snakemake, a powerful workflow management system, and gain hands-on experience creating, executing, and managing complex computational workflows.
+**Workflow management using Snakemake/nf-core:**
+Dive into Snakemake, a powerful workflow management system, and gain hands-on experience creating, executing, and managing complex computational workflows. We will also explore basics of Nextflow and get hands-on experience with nf-core pipelines.
 
 **Code, data and project management and documentation:**
 Learn best practices for organizing, sharing, and documenting code and data to facilitate reproducibility and enable others to build upon your work.
