@@ -161,3 +161,11 @@ cython_debug/
 
 #  Mac OS X Finder 
 *.DS_Store
+
+
+## Snamemake
+*.snakemake*
+
+05-workflows/snakemake/data/trim_A.txt
+05-workflows/snakemake/data/trim_B.txt
+05-workflows/snakemake/results/
