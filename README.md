@@ -39,7 +39,7 @@ Learn best practices for organizing, sharing, and documenting code and data to f
 | Date       | Day     | Topics covered                               | Time     | Location    | Material                |
 |------------|---------|-----------------------------------------------|----------|-------------|-------------------------|
 | 02.26.2024 | Mon  | Introduction to reproducibility and setting up | 10:00-13:00 | M218A | [Slides](/01-course-intro/BIOS259_01-introduction-to-reproducibility_20240226.pdf), Setup instructions |
-| 02.28.2024 | Wed | Version Control (Git/GitHub)                   | 10:00-13:00 | M218A       | Slides, [Git cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf){:target="_blank"} |
+| 02.28.2024 | Wed | Version Control (Git/GitHub)                   | 10:00-13:00 | M218A       | Slides, [Git cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf) |
 | 03.01.2024 | Fri  | Environment management (Conda, Bioconda, Mamba) | 10:00-13:00 | M218A       |  |
 | 03.04.2024 | Mon  | Containerization (Docker, Singularity)          | 10:00-13:00 | M218A       |  |
 | 03.06.2024 | Wed | Workflows (Snakemake, Nextflow/nf-core)        | 10:00-13:00 | M218A       |  |
