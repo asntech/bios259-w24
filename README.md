@@ -8,12 +8,14 @@ This mini-course is designed to equip graduate students and postdocs with essent
 ### Learning goals
 
 This course aims to foster a culture of reproducibility, open science, open source and collaboration in research and provide the necessary tools and skills. Through active engagement and completion of course activities, you will be able to:
-- Understand the importance and causes of computational reproducibility in research.
-- Gain proficiency in version control systems (e.g., Git) for collaborative code and data tracking.
-- Create and share conda environments for software dependency management.
+
+- Understand the importance and causes of computational reproducibility in research
+- Gain proficiency in version control systems (e.g., Git) for collaborative code and data tracking
+- Create and share conda environments for software dependency management
 - Utilize containerization tools (e.g., Docker, Singularity) for portable computing environments.
-- Develop effective strategies for managing and documenting data and code to ensure reproducibility.
-- Implement best practices for transparent and reproducible project organization.
+- Learn techniques for automating workflows and generating reproducible results
+- Develop effective strategies for managing and documenting data and code to ensure reproducibility
+- Implement best practices for transparent and reproducible project organization
 
 ### Topics covered
 
@@ -25,7 +27,7 @@ This course aims to foster a culture of reproducibility, open science, open sour
 Understand how to encapsulate your computational environment, ensuring consistent and reproducible execution across different systems.
 
 **Workflow management using Snakemake/nf-core:**
-Dive into Snakemake, a powerful workflow management system, and gain hands-on experience creating, executing, and managing complex computational workflows. We will also explore basics of Nextflow and get hands-on experience with nf-core pipelines.
+Dive into Snakemake, a powerful workflow management system, and gain hands-on experience creating, executing, and managing complex computational workflows. We will also explore the basics of Nextflow and get hands-on experience with nf-core pipelines.
 
 **Code, data and project management and documentation:**
 Learn best practices for organizing, sharing, and documenting code and data to facilitate reproducibility and enable others to build upon your work.
