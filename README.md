@@ -21,7 +21,7 @@ This course aims to foster a culture of reproducibility, open science, open sour
 
 **Version Control with Git:** Learn how to track changes, collaborate effectively, and maintain a robust version history of your code and documents.
 
-**Environment management with Conda/Bioconda/Mamba:** Explore Conda, a leading package manager, and learn how to efficiently manage software dependencies in your projects. Additionally, delve into Bioconda for specialized bioinformatics packages.
+**Environment management with Conda/Bioconda/Mamba:** Explore Conda/Mamba, a famous package manager, and learn how to manage software dependencies in your projects efficiently and reproducibly. Additionally, we use channels, including Bioconda, for specialized bioinformatics packages.
 
 **Containerization with Docker and Singularity:**
 Understand how to encapsulate your computational environment, ensuring consistent and reproducible execution across different systems.
