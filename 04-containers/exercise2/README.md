@@ -28,7 +28,7 @@ This exercise will guide you through using an existing image, the one you create
     docker run <image_name>
     ```
 
-    Ensure that your first name is displayed as expected in the application output.
+    By default, it will print the descriptive statistics for a `seaborn` dataset.
 
 5. **Push the Docker image to Docker Hub**: Now, it's time to push your modified Docker image to Docker Hub. First, log in to Docker Hub using the `docker login` command.
 
