@@ -52,10 +52,10 @@ This exercise will guide you through using an existing image, the one you create
 
 8. Verify on Docker Hub: Visit your Docker Hub profile online and confirm that your Docker image has been pushed successfully.
 
-9. You may want to commit and push it GitHub to brush up your Git skills from day 2 :-)
+9. You may want to commit and push it to GitHub to brush up your Git skills from day 2 :-)
 
-10. **Bonus task**: Create a `Singularity` image using the Docker image you just pushed to Docker Hun and try to run it as a Singularity container.
+10. **Bonus task**: Create a `Singularity` image using the Docker image you just pushed to Docker Hub and try to run it as a Singularity container on an HPC.
 
 ## Conclusion
 
-Congratulations! You have successfully modified a Dockerfile, built a Docker image with your changes, and pushed it to Docker Hub. This exercise demonstrates a basic workflow for Docker image modification and distribution.
+Congratulations! You have successfully built a Docker image by extending an existing one in the Docker Hub and installing the tools you need to run the application inside the container. This exercise demonstrates an advanced workflow for Docker image creation and distribution.
