@@ -19,4 +19,4 @@ jobs:
         # Navigate to the desired directory
         cd ./04-containers/exercise1/
         # Build the Docker 
-        docker build . --file ./04-containers/exercise1/Dockerfile --tag bios259:$(date +%s)
+        docker build . --file Dockerfile --tag bios259:$(date +%s)
