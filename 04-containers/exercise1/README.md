@@ -2,11 +2,11 @@
 
 ## Introduction
 
-This exercise will guide you through the process of modifying a Dockerfile and pushing the resulting Docker image to Docker Hub. The Dockerfile contains a simple Python application that takes a ``--name`` argument with a default value. Your task is to replace the default name with your first name and then rebuild and push the modified Docker image to Docker Hub.
+This exercise will guide you through modifying a Dockerfile and pushing the resulting Docker image to Docker Hub. The Dockerfile contains a simple Python application that takes a ``--name`` argument with a default value. Your task is to replace the default name with your first name and then rebuild and push the modified Docker image to Docker Hub.
 
 ### Instructions
 
-1. **Fork and clone the repository**: First go to the GitHub repo https://github.com/asntech/bios259-w24 and Fork it. Next clone the repository containing the Dockerfile and the Python application app.py in the `04-containers/exercise1` directory.
+1. **Fork and clone the repository**: First go to the GitHub repo https://github.com/asntech/bios259-w24 and Fork it. Next, clone the repository containing the Dockerfile and the Python application app.py in the `04-containers/exercise1` directory.
 
     ```bash
     git clone https://github.com/<username>/bios259-w24.git
@@ -27,13 +27,13 @@ This exercise will guide you through the process of modifying a Dockerfile and p
     docker build -t <image_name> .
     ```
 
-4. **Run the Docker container**: After the image is built successfully, you can run a container from the image to ensure that it works as expected.
+4. **Run the Docker container**: After the image is built successfully, you can run a container from the image to ensure it works as expected.
 
     ```bash
     docker run <image_name>
     ```
 
-    Make sure that your first name is displayed as expected in the output of the application.
+    Ensure that your first name is displayed as expected in the application output.
 
 5. **Push the Docker image to Docker Hub**: Now, it's time to push your modified Docker image to Docker Hub. First, log in to Docker Hub using the `docker login` command.
 
@@ -57,7 +57,7 @@ This exercise will guide you through the process of modifying a Dockerfile and p
 
 8. Verify on Docker Hub: Visit your Docker Hub profile on the web and confirm that your Docker image has been pushed successfully.
 
-9. You may want to commit and push it GitHub to brush-up your Git skills from day 2 :-)
+9. You may want to commit and push it GitHub to brush up your Git skills from day 2 :-)
 
 ## Conclusion
 
