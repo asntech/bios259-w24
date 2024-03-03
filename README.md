@@ -29,7 +29,7 @@ Understand how to encapsulate your computational environment, ensuring consisten
 **Workflow management using Snakemake/nf-core:**
 Dive into Snakemake, a powerful workflow management system, and gain hands-on experience creating, executing, and managing complex computational workflows. We will also explore the basics of Nextflow and get hands-on experience with nf-core pipelines.
 
-**Code, data and project management and documentation:**
+**Documentation and code and data sharing:**
 Learn best practices for organizing, sharing, and documenting code and data to facilitate reproducibility and enable others to build upon your work.
 
 ### Prerequisites
@@ -45,7 +45,7 @@ Learn best practices for organizing, sharing, and documenting code and data to f
 | 03.01.2024 | Fri  | Environment management (Conda, Bioconda, Mamba) | 10:00-13:00 | M218A       | [Slides](/03-env-conda/BIOS259_03-dependency-management-with-conda-mamba.pdf), [Conda cheat sheet](/03-env-conda/conda-cheatsheet.pdf) |
 | 03.04.2024 | Mon  | Containerization (Docker, Singularity)          | 10:00-13:00 | M218A       |  |
 | 03.06.2024 | Wed | Workflows (Snakemake, Nextflow/nf-core)        | 10:00-13:00 | M218A       |  |
-| 03.08.2024 | Fri  | Documentation (FAIR data and open code) and wrap-up | 10:00-13:00 | LK208 |  |
+| 03.08.2024 | Fri  | Document and share (Notebooks, FAIR data, and open code) and wrap-up | 10:00-13:00 | LK208 |  |
 
 
 ### Resources and additional reading material
