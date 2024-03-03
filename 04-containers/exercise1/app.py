@@ -5,12 +5,13 @@ import click
 @click.version_option(version='1.0.0')
 def main(name):
     """
-    Welcome to BIOS259: The Art of Reproducible Science!
-    github.com/asntech/art-of-reproducible-science
+    A demo App for BIOS259: The Art of Reproducible Science
+    https://github.com/asntech/bios259-w24
     
     Author: Aziz Khan <azizk@stanford.edu>
     """
-    click.echo(f"Hello, {name}, Welcome to BIOS259 – The Art of Reproducible Science")
+
+    print(f"Hello, {name}!\nWelcome to BIOS259 – The Art of Reproducible Science")
 
 if __name__ == "__main__":
     main()

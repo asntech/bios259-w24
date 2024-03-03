@@ -9,5 +9,11 @@ WORKDIR /opt
 ## Copy the app.py file to /opt  
 COPY app.py /opt
 
+## Make app.py executeable
+#RUN chmod +x /opt/app.py
+
+## Add app.py to the path
+#RUN export PATH=/opt:$PATH
+
 ## Run the application
 CMD ["python", "/opt/app.py", "--name", "Participant"]
