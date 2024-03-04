@@ -13,7 +13,7 @@ This exercise will guide you through using an existing image, the one you create
     cd bios259-w24/04-containers/exercise2
     ```
 
-2. **Modify the Dockerfile**: Open the `Dockerfile` in a text editor. You need to use the docker image from your docker hub account that you pushed in exercise 1 as the starting point. You will see in the app2.py that it now also requires `seaborn` package to run `app2.py` and we already have `python` and `click` pre-installed.
+2. **Modify the Dockerfile**: Open the `Dockerfile` in a text editor. You need to use the docker image from your docker hub account that your peer pushed in exercise 1 as the starting point. You will see in the app2.py that it now also requires `seaborn` package to run `app2.py` and we already have `python` and `click` pre-installed.
 
 
 3. **Build the Docker image**: Once you have modified the Dockerfile, build the Docker image using the `docker build` command. Replace `<image_name>` with a suitable name for your Docker image.
