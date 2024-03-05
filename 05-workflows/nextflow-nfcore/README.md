@@ -11,9 +11,9 @@ The objective of this exercise is to introduce students to running the nf-core S
 
 ## Prerequisites:
 
--  Access to a computing cluster or cloud environment.
--  Installed Nextflow and Docker/Singularity on the cluster.
--  Familiarity with basic Unix commands and Nextflow concepts.
+-  Access to a computing cluster or cloud environment
+-  Installed Nextflow and Singularity on the cluster
+-  Familiarity with basic Unix commands and workflow concepts
 
 ## Steps 
 
