@@ -1,4 +1,6 @@
-## Workflow management
+## Hands-on Exercise: Running Snakemake workflow
+
+This is a hands-on exercise on running Snakemake workflows on the cluster (either SCG or Sherlock). Through a dummy workflow, students will learn the basics of a Snakemake workflow: rules; wildcards; resource management; environment management. 
 
 ### Snakemake cli commands
 To run locally, just provide no. of cores e.g.
