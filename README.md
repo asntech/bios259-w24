@@ -1,5 +1,5 @@
-## BIOS 259: The Art of Reproducible Science: A Hands-on Approach
-Welcome to BIOS 259! This is course material for (BIOS 259) The Art of Reproducible Science: A Hands-on Approach
+## BIOS 259: The Art of Reproducible Science – A Hands-on Approach
+> Welcome to **BIOS 259** – a Stanford Biosciences *mini-course* on **computational reproducibility**
 
 ### Course description
 
