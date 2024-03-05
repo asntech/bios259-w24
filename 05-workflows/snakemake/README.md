@@ -36,7 +36,7 @@ Try:
 3. Edit this workflow to change default resources
 
 ### `snakefile03.smk`
-1. Review and check it makes sense. Run this as-is on scg/sherlock
+1. Review and check it makes sense. Run this as-is on scg/sherlock [hint: might need to update your snakemake profile to use singularity--check `config.yaml`!]
 2. Try deleting intermediate files. What happens when you rerun the workflow? 
 
 
