@@ -6,7 +6,7 @@ We will run `snakefile01.smk` and `snakefile03.smk` during class. (We will just 
 
 ## Prerequisites
 * Installed snakemake v7.32.2 on scg/sherlock
-  * If you don't have conda on the cluster, install miniconda. Follow the instructions under [here](https://github.com/bhattlab/scg_tools](https://github.com/bhattlab/scg_tools?tab=readme-ov-file#setting-up-your-environment-with-conda). Make sure you've downloaded conda by trying `which python` and `which conda`.
+  * If you don't have conda on the cluster, install miniconda. Follow the instructions under [here](https://github.com/bhattlab/scg_tools?tab=readme-ov-file#setting-up-your-environment-with-conda). Make sure you've downloaded conda by trying `which python` and `which conda`.
   * Follow the instructions in this [link](https://snakemake.readthedocs.io/en/v7.32.2/getting_started/installation.html), making sure to specify the version [hint: use `snakemake=7.32.2`]
 * Clone this repo to a dir on the cluster [hint: use `git clone`]
 
@@ -20,7 +20,7 @@ To use slurm, use one of the snakemake profiles, depending if you're using scg/s
 `snakemake --snakefile <snakefile.smk> --profile <snakemake_profiles/slurm_sherlock>`
 
 If you use `snakemake_profiles`, please inspect the `config.yaml` file and `chmod u+x status-sacct.sh` 
-* Make sure the paths in `config.yaml` makes sense and you understand what it's there to do
+* Make sure the paths in `config.yaml` makes sense and you understand what it's there to do. Notice a lot of these are just sbatch options
 * `status-sacct.sh` is just a script to ask slurm the status of each job. For our class, this is a bit over the top. This makes sure we're aware of jobs that silently fails (the exact `sacct` status we're monitoring are in the script)
 
 To do a dry-run (you should!), just put `-n` at the end, e.g. 
