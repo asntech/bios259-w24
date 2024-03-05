@@ -1,7 +1,8 @@
 
-## Hands-on Exercise: Running Nextflownf-core Sarek Pipeline for Mutation Calling
+## Hands-on Exercise
+### Running Nextflow/nf-core Sarek Pipeline for Mutation Calling
 
-This is a hands-on exercise to run the Nextflow based nf-core Sarek pipeline for mutation calling. This exercise assumes that students have access to a computational environment with Nextflow installed, as well as access to a computing cluster or cloud environment for running the pipeline.
+This is a hands-on exercise to run the Nextflow-based nf-core Sarek pipeline for mutation calling. This exercise assumes that students have access to a computational environment with Nextflow installed, as well as access to a computing cluster or cloud environment for running the pipeline.
 
 ## Objective
 
@@ -22,7 +23,7 @@ The objective of this exercise is to introduce students to running the nf-core S
 ssh <SUNetID>@login.sherlock.stanford.edu
 ``
 
-### Make a direcotry
+### Make a directory
 
 Let's make a directory on the scratch space.
 
@@ -31,7 +32,7 @@ mkdir -p /scratch/users/${USER}/bios259/sarek
 cd /scratch/users/${USER}/bios259/sarek
 ```
 
-### Load the Java module as Nextflow needs Java
+### Load the Java module, because Nextflow needs Java
 
 Nextflow needs Java, so let's load Java using the module load.
 ```
@@ -81,13 +82,13 @@ sh_dev -c 4 -m 8GB -t 01:00:00 -J sarek_test
 ### Run the Sarek pipeline using a test dataset
 
 We will run the pipeline as a singularity on test data and call somatic mutations using Strelka2.
-This is a small test data which uses only part of one chromosome. You need to find what chromosome is that at the end. 
+This is a small test data that uses only part of one chromosome. You need to find what chromosome is at the end. 
 
 ```
 nextflow run nf-core/sarek -profile test,singularity --outdir results -r 3.3.0 --tools strelka
 ```
 
-### View the resuts
+### View the results
 
 ```
 cd results
@@ -108,4 +109,4 @@ You can simple go the same directory and resume the pipeline by providing cnvkit
 nextflow run nf-core/sarek -profile test,singularity --outdir results -r 3.3.0 --tools strelka,cnvkit -resume
 ```
 
-Now you can look for the CNAs. Can you find what chromosome number was used for this analysis.
+Now, you can look for the CNAs. Can you find what chromosome number was used for this analysis?
