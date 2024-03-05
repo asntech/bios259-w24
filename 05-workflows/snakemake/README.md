@@ -6,7 +6,7 @@ We will run `snakefile01.smk` and `snakefile03.smk` during class. (We will just 
 
 ## Prerequisites
 * Installed snakemake v7.32.2 on scg/sherlock
-  * If you don't have conda on the cluster, install miniconda. Follow the instructions under [here]([https://github.com/bhattlab/scg_tools](https://github.com/bhattlab/scg_tools?tab=readme-ov-file#setting-up-your-environment-with-conda)). Make sure you've downloaded conda by trying `which python` and `which conda`.
+  * If you don't have conda on the cluster, install miniconda. Follow the instructions under [here](https://github.com/bhattlab/scg_tools](https://github.com/bhattlab/scg_tools?tab=readme-ov-file#setting-up-your-environment-with-conda). Make sure you've downloaded conda by trying `which python` and `which conda`.
   * Follow the instructions in this [link](https://snakemake.readthedocs.io/en/v7.32.2/getting_started/installation.html), making sure to specify the version [hint: use `snakemake=7.32.2`]
 * Clone this repo to a dir on the cluster [hint: use `git clone`]
 
