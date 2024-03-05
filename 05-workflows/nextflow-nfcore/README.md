@@ -34,6 +34,8 @@ cd /scratch/users/${USER}/bios259/sarek
 
 ### Load the Java module, because Nextflow needs Java
 
+We have a pre-installed copy of `Nextflow version 23.10.1`. If you already have a Nextflow installed, skip the step below.
+
 Nextflow needs Java, so let's load Java using the module load.
 ```
 module load java/18.0.2
