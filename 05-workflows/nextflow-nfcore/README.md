@@ -123,20 +123,20 @@ Now, you can look for the CNAs. What chromosome number was used for this analysi
 
 ### Install nf-core tools
 
-``
+```
 conda install -c biocnda nf-core
-``
+```
 **OR**
-``
+```
 pip install nf-core
-``
+```
 Once installed, you can view all the available pipelines.
 
-``
+```
 nf-core list
-``
+```
 
-``
+```
 (nf) CCC-YM6P2N5QX4:eniclust azizk$ nf-core list
 
                                           ,--./,-.
@@ -168,5 +168,5 @@ nf-core list
 
 .
 .
-``
+```
 
