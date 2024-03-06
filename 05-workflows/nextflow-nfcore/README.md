@@ -137,7 +137,7 @@ nf-core list
 ```
 
 ```
-(nf) CCC-YM6P2N5QX4:eniclust azizk$ nf-core list
+$ nf-core list
 
                                           ,--./,-.
           ___     __   __   __   ___     /,-._.--~\
