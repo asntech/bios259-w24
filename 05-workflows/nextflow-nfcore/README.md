@@ -42,13 +42,21 @@ module load java/18.0.2
 
 ## export the paths
 export PATH=/scratch/users/azizk/bios259/bin:${PATH}
-export NXF_SINGULARITY_CACHEDIR=/scratch/users/azizk/bios259/nf-core
+mkdir -p /scratch/users/${USER}/bios259/nf-core && export NXF_SINGULARITY_CACHEDIR=/scratch/users/${USER}/bios259/nf-core
 ```
 
 ### Try and check if Nexflow is working
 Try this
 ``
 nextflow -h
+``
+If this does not work, you can easily install Nextflow in the current dir using:
+``
+wget -qO- https://get.nextflow.io | bash && chmod +x nextflow
+``
+now try this
+``
+./nextflow -h
 ``
 
 ### Start an interactive session on Sherlock
@@ -111,4 +119,54 @@ You can simple go the same directory and resume the pipeline by providing cnvkit
 nextflow run nf-core/sarek -profile test,singularity --outdir results -r 3.3.0 --tools strelka,cnvkit -resume
 ```
 
-Now, you can look for the CNAs. Can you find what chromosome number was used for this analysis?
+Now, you can look for the CNAs. What chromosome number was used for this analysis?
+
+### Install nf-core tools
+
+``
+conda install -c biocnda nf-core
+``
+**OR**
+``
+pip install nf-core
+``
+Once installed, you can view all the available pipelines.
+
+``
+nf-core list
+``
+
+``
+(nf) CCC-YM6P2N5QX4:eniclust azizk$ nf-core list
+
+                                          ,--./,-.
+          ___     __   __   __   ___     /,-._.--~\
+    |\ | |__  __ /  ` /  \ |__) |__         }  {
+    | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                          `._,._,'
+
+    nf-core/tools version 2.13 - https://nf-co.re
+    There is a new version of nf-core/tools available! (2.13.1)
+
+
+┏━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┓
+┃           ┃       ┃           ┃          ┃           ┃ Have     ┃
+┃ Pipeline  ┃       ┃    Latest ┃          ┃      Last ┃ latest   ┃
+┃ Name      ┃ Stars ┃   Release ┃ Released ┃    Pulled ┃ release? ┃
+┡━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━┩
+│ rnaseq    │   744 │    3.14.0 │ 2 months │         - │ -        │
+│           │       │           │      ago │           │          │
+│ raredise… │    65 │     1.1.1 │ 7 months │         - │ -        │
+│           │       │           │      ago │           │          │
+│ detaxizer │     6 │       dev │  4 hours │         - │ -        │
+│           │       │           │      ago │           │          │
+│ nascent   │    13 │     2.2.0 │ 17 hours │         - │ -        │
+│           │       │           │      ago │           │          │
+│ mhcquant  │    29 │     2.5.0 │ 5 months │         - │ -        │
+│           │       │           │      ago │           │          │
+│ variantb… │     4 │       dev │ yesterd… │         - │ -        │
+
+.
+.
+``
+
