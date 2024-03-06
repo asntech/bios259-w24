@@ -18,7 +18,6 @@ The objective of this exercise is to introduce students to running the nf-core S
 ## Steps 
 
 ### SSH to Sherlock
-
 ``
 ssh <SUNetID>@login.sherlock.stanford.edu
 ``
@@ -33,7 +32,7 @@ cd /scratch/users/${USER}/bios259/sarek
 ```
 
 ### Load the Java module, because Nextflow needs Java
-
+If you're on SCG skip to next step.
 We have a pre-installed copy of `Nextflow version 23.10.1`. If you already have a Nextflow installed, skip the step below.
 
 Nextflow needs Java, so let's load Java using the module load.
@@ -45,16 +44,28 @@ export PATH=/scratch/users/azizk/bios259/bin:${PATH}
 mkdir -p /scratch/users/${USER}/bios259/nf-core && export NXF_SINGULARITY_CACHEDIR=/scratch/users/${USER}/bios259/nf-core
 ```
 
+### Use Module load on SCG
+
+```
+module load java && module load nextflow/23.10.1
+```
+
 ### Try and check if Nexflow is working
 Try this
 ``
 nextflow -h
 ``
+
 If this does not work, you can easily install Nextflow in the current dir using:
 ``
 wget -qO- https://get.nextflow.io | bash && chmod +x nextflow
 ``
-now try this
+OR use conda/mamba
+
+```
+conda install nextflow
+```
+now try this:
 ``
 ./nextflow -h
 ``
