@@ -10,12 +10,14 @@ cluster:
     --mem-per-cpu={resources.mem_mb}
     --nodes={resources.nodes}
     --cpus-per-task={resources.threads}
+    --parsable
 default-resources:
   - partition=interactive
   - time="00:10:00"
   - mem_mb=4000
   - disk_mb=4000
   - nodes=1
+  - threads=1
 latency-wait: 120
 # restart-times: 3
 jobs: 50
@@ -29,3 +31,4 @@ use-conda: True
 # singularity-args: "-B /oak:/oak"
 cluster-status: "./snakemake_profiles/slurm_scg/status-sacct.sh"
 max-status-checks-per-second: 10
+cluster-cancel: scancel
