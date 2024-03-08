@@ -45,7 +45,7 @@ Learn best practices for organizing, sharing, and documenting code and data to f
 | 03.01.2024 | Fri  | Environment management (Conda, Bioconda, Mamba) | 10:00-13:00 | M218A       | [Slides](/03-env-conda/BIOS259_03-dependency-management-with-conda-mamba.pdf), [Conda cheat sheet](/03-env-conda/conda-cheatsheet.pdf) |
 | 03.04.2024 | Mon  | Containerization (Docker, Singularity)          | 10:00-13:00 | M218A       | [Slides](/04-containers/BIOS259_04-containerization.pdf), [Docker cheat sheet](https://docs.docker.com/get-started/docker_cheatsheet.pdf) |
 | 03.06.2024 | Wed | Workflows (Snakemake, Nextflow/nf-core)        | 10:00-13:00 | M218A       |  |
-| 03.08.2024 | Fri  | Document and share (Notebooks, FAIR data, and open code) and wrap-up | 10:00-13:00 | LK208 |  |
+| 03.08.2024 | Fri  | Document and share (Notebooks, FAIR data, and open code) and wrap-up | 10:00-13:00 | LK208 | [Slides](/06-docs-sharing/BIOS259_06-literate-programming-FAIR-data.pdf), [Excercise](/06-docs-sharing/) |
 
 
 ### Resources and additional reading material
