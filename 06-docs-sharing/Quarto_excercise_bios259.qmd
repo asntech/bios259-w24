@@ -1,0 +1,126 @@
+---
+title: "Quarto excercise -- BIOS259"
+format: html
+editor: visual
+author:
+- name: Aziz Khan
+  affiliation: Stanford University, CA, USA
+- name: Your Name
+  affiliation: Your University Name
+date: "`r format(Sys.time(), '%d %B %Y')`"
+abstract: "This is hands-on excrcise for BIOS 259: The Art of Reproducible Science
+  – a Stanford Biosciences mini-course on computational reproducibility\n"
+tags:
+- reproducibility
+- notebook
+- iris
+---
+
+## Introduction
+
+In this **Quarto document**, we'll explore some built-in datasets in R base and create visualizations to analyze the data. The goal is to demonstrate how Quarto combines code and narrative text to produce *reproducible research*.
+
+## Load Data
+
+We'll start by loading the `iris` dataset, which contains measurements of iris flowers.
+
+```{r}
+# Load the iris dataset
+data(iris)
+head(iris)
+```
+
+The iris dataset contains measurements of sepal length, sepal width, petal length, and petal width for **`r length(unique(iris$Species))` species** of iris flowers: setosa, versicolor, and virginica.
+
+## Summary Statistics
+
+Let's explore the structure of the iris dataset and summary statistics for each variable.
+
+```{r}
+# Explore dataset structure
+str(iris)
+
+# Summary statistics
+summary(iris)
+
+```
+
+## Data Visualization
+
+### Scatter Plot
+
+We'll create a scatter plot to visualize the relationship between sepal length and sepal width for each species of iris flowers.
+
+```{r, fig.width=8, fig.height=5}
+# Scatter plot of sepal length vs. sepal width
+library(ggplot2)
+iris_scatter_plot <- ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
+  geom_point() +
+  labs(title = "Scatter Plot",
+       x = "Sepal Length", y = "Sepal Width")
+
+# print the plot
+iris_scatter_plot
+```
+
+### Make the plot publication ready
+
+```{r iris-figure1a, fig.width=8, fig.height=5}
+# Load the cowplot
+require(cowplot)
+# Use the theme from cowplot
+iris_scatter_plot <- iris_scatter_plot + theme_cowplot(12)
+iris_scatter_plot
+```
+
+### Boxplot
+
+Next, we'll create a boxplot to compare the distribution of petal lengths for each species of iris flowers.
+
+```{r iris-figure1b, fig.width=4, fig.height=5}
+# Boxplot of petal length by species
+iris_box_plot <- ggplot(iris, aes(x = Species, y = Petal.Length, fill = Species)) +
+  geom_boxplot() +
+  labs(title = "Boxplot",
+       x = "Species", y = "Petal Length") + theme_cowplot(12)
+
+iris_box_plot
+```
+
+### Density Plot
+
+Finally, let's add a density plot to visualize the distribution of sepal lengths for each species of iris flowers.
+
+```{r iris-figure1c}
+# Density plot of sepal length by species
+iris_density_plot <- ggplot(iris, aes(x = Sepal.Length, fill = Species)) +
+  geom_density(alpha = 0.5) +
+  labs(title = "Density Plot",
+       x = "Sepal Length", y = "Density") + theme_cowplot(12)
+iris_density_plot
+```
+
+## Conclusion
+
+In this R Markdown document, we explored the iris dataset available in R base and created visualizations to analyze the data. By combining code and narrative text in R Markdown, we produced a reproducible analysis that can be easily shared and reproduced by others.
+
+The `cowplot` package provides the function `plot_grid()` to arrange plots into a grid and label them.
+
+```{r iris-figure1, fig.width=14, fig.height=4}
+#Arranging plots into a grid
+plot_grid(iris_scatter_plot, iris_box_plot, iris_density_plot, labels = c('A', 'B','C'),
+          ncol=3, rel_widths = c(2,1.5,2))
+
+```
+
+Feel free to modify the code, explore other datasets, or add additional visualizations to further analyze the data!
+
+> **Note:** To generate publication ready figures you can try [ggpubr](https://rpkgs.datanovia.com/ggpubr/index.html)
+
+## R session
+
+A good practice is to print R session to record the versions of the packages used.
+
+```{r}
+devtools::session_info()
+```
