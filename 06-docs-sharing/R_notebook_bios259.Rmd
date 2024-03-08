@@ -16,7 +16,6 @@ tags:
 - iris
 ---
 
-
 ## Introduction
 
 In this **R Notebook**, we'll explore some built-in datasets in R base and create visualizations to analyze the data. The goal is to demonstrate how R Markdown combines code and narrative text to produce *reproducible research*.
@@ -33,7 +32,6 @@ head(iris)
 
 The iris dataset contains measurements of sepal length, sepal width, petal length, and petal width for **`r length(unique(iris$Species))` species** of iris flowers: setosa, versicolor, and virginica.
 
-
 ## Summary Statistics
 
 Let's explore the structure of the iris dataset and summary statistics for each variable.
@@ -46,7 +44,6 @@ str(iris)
 summary(iris)
 
 ```
-
 
 ## Data Visualization
 
@@ -66,7 +63,7 @@ iris_scatter_plot <- ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color =
 iris_scatter_plot
 ```
 
-### Make the plot pulication ready
+### Make the plot publication ready
 
 ```{r, fig.width=8, fig.height=5}
 # Load the cowplot
@@ -75,7 +72,6 @@ require(cowplot)
 iris_scatter_plot <- iris_scatter_plot + theme_cowplot(12)
 iris_scatter_plot
 ```
-
 
 ### Boxplot
 
@@ -91,7 +87,6 @@ iris_box_plot <- ggplot(iris, aes(x = Species, y = Petal.Length, fill = Species)
 iris_box_plot
 ```
 
-
 ### Density Plot
 
 Finally, let's add a density plot to visualize the distribution of sepal lengths for each species of iris flowers.
@@ -104,7 +99,6 @@ iris_density_plot <- ggplot(iris, aes(x = Sepal.Length, fill = Species)) +
        x = "Sepal Length", y = "Density") + theme_cowplot(12)
 iris_density_plot
 ```
-
 
 ## Conclusion
 
@@ -119,7 +113,6 @@ plot_grid(iris_scatter_plot, iris_box_plot, iris_density_plot, labels = c('A', '
 
 ```
 
-
 Feel free to modify the code, explore other datasets, or add additional visualizations to further analyze the data!
 
 > **Note:** To generate publication ready figures you can try [ggpubr](https://rpkgs.datanovia.com/ggpubr/index.html)
@@ -127,7 +120,7 @@ Feel free to modify the code, explore other datasets, or add additional visualiz
 ## R session
 
 A good practice is to print R session to record the versions of the packages used.
+
 ```{r}
 devtools::session_info()
 ```
-
